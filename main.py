@@ -3,8 +3,8 @@ import telepot
 from keep_alive import keep_alive
 keep_alive()
 
-bot_token = '7525632231:AAEVbb18zRSWrfRIKMSfDBv86PtATyHLsq4'
-channel_id = '@cryptonws2'
+bot_token = '/'
+channel_id = '/'
 error_count = 0
 # A program that listens to new messages in a telegram channel
 # and deletes the message from the chat if it is the same as the previous message
