@@ -12,7 +12,7 @@ error_count = 0
 bot = telepot.Bot(bot_token)
 
 # use bot to get the last 100 messages in the channel
-response = bot.getUpdates(offset=-100)
+response = bot.getUpdates(offset=-3)
 
 
 
@@ -58,7 +58,7 @@ def check_for_dups(response):
                     except:
                         continue
     print('done looping through messages')
-    time.sleep(10)
+    time.sleep(1)
     return bot.getUpdates()
 
 
@@ -68,5 +68,5 @@ while True:
         response = sorted(response, key=lambda k: k['channel_post']['message_id'])
         response = check_for_dups(response)
     else:
-        time.sleep(10)
+        time.sleep(1)
         print('no more messages, waiting for new messages')
