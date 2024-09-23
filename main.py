@@ -1,5 +1,7 @@
 import time
 import telepot
+from keep_alive import keep_alive
+keep_alive()
 
 bot_token = '7525632231:AAEVbb18zRSWrfRIKMSfDBv86PtATyHLsq4'
 channel_id = '@cryptonws2'
